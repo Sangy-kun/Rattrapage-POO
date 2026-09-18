@@ -5,10 +5,10 @@ public class Vetement {
     //vetement avec nom, taille, prix unitaire, materiel,
     private String nom;
     private String taille;
-    private float prix;
-    private String materiel;
+    private double prix;
+    private Materiel materiel;
 
-    public Vetement(String nom, String taille, float prix, String materiel) {
+    public Vetement(String nom, String taille, double prix, Materiel materiel) {
         this.nom = nom;
         this.taille = taille;
         this.prix = prix;
@@ -31,19 +31,19 @@ public class Vetement {
         this.taille = taille;
     }
 
-    public float getPrix() {
+    public double getPrix() {
         return prix;
     }
 
-    public void setPrix(float prix) {
+    public void setPrix(double prix) {
         this.prix = prix;
     }
 
-    public String getMateriel() {
+    public Materiel getMateriel() {
         return materiel;
     }
 
-    public void setMateriel(String materiel) {
+    public void setMateriel(Materiel materiel) {
         this.materiel = materiel;
     }
 }
