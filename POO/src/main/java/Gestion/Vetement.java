@@ -46,4 +46,14 @@ public class Vetement {
     public void setMateriel(Materiel materiel) {
         this.materiel = materiel;
     }
+
+    @Override
+    public String toString() {
+        return "Garment{" +
+                "nom='" + nom + '\'' +
+                ", taille=" + taille +
+                ", prix=" + prix +
+                ", materiel=" + materiel +
+                '}';
+    }
 }
